@@ -1,0 +1,123 @@
+*{
+       font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+body {
+    background-color: black;
+    box-sizing: border-box;
+    
+}
+
+.card {
+    
+    width: 420px;
+    max-width: 450px;
+    /* height: 560px; */
+    color: white;
+    background: linear-gradient(135deg, #00feba, #5b548b);
+    margin:50px auto;
+    padding: 30px, 30px;
+    border-radius: 24px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid red; */
+   
+}
+
+.search {
+    background: transparent;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    flex: 1;
+    padding: 10px;
+    margin: 5px 15px;
+}
+
+button {
+    /* color: rgb(10, 10, 10);
+    background-color: rgb(241, 241, 242); */
+    border-radius: 50%;
+    outline: 0;
+    border: 0;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+button img{
+    width: 100%;
+}
+
+.weather-icon {
+    width: 110px;
+    height: 110px;
+
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 9px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -50px;
+
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.hum{
+    width: 50px;
+    height: 50px;
+   
+}
+.wim{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.humidity,.wind{
+    font-size: 20px;
+}
+.humidity, .p2{
+    margin-left: -35px;
+}
+.wind{
+    margin-left: -10px;
+}
+ .weather{
+    display: none; 
+} 
+.error{
+    display: none;
+    margin-top: 20px;
+    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
