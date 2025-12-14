@@ -1,123 +1,137 @@
-*{
-       font-family: "Bebas Neue", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
 body {
-    background-color: black;
-    box-sizing: border-box;
-    
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 
+/* CARD */
 .card {
-    
-    width: 420px;
-    max-width: 450px;
-    /* height: 560px; */
-    color: white;
-    background: linear-gradient(135deg, #00feba, #5b548b);
-    margin:50px auto;
-    padding: 30px, 30px;
-    border-radius: 24px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    /* border: 2px solid red; */
-   
+  width: 100%;
+  max-width: 420px;
+  background: linear-gradient(135deg, #00feba, #5b548b);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
 }
 
+/* TITLE */
+.title {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* SEARCH */
 .search {
-    background: transparent;
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .search input {
-    border: 0;
-    outline: 0;
-    background: white;
-    color: black;
-    border-radius: 15px;
-    flex: 1;
-    padding: 10px;
-    margin: 5px 15px;
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
 }
 
-button {
-    /* color: rgb(10, 10, 10);
-    background-color: rgb(241, 241, 242); */
-    border-radius: 50%;
-    outline: 0;
-    border: 0;
-    height: 60px;
-    width: 60px;
-    cursor: pointer;
+.search button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  cursor: pointer;
 }
 
-button img{
-    width: 100%;
+.search button img {
+  width: 20px;
+}
+
+/* WEATHER */
+.weather {
+  display: none;
 }
 
 .weather-icon {
-    width: 110px;
-    height: 110px;
-
+  width: 100px;
+  margin: 10px 0;
 }
 
-h1 {
-    font-size: 70px;
-    font-weight: 500;
-    margin-top: 9px;
+.temp {
+  font-size: 48px;
+  font-weight: 600;
 }
 
-h2 {
-    font-size: 35px;
-    font-weight: 400;
-    margin-top: -50px;
-
+.city {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.col{
-    display: flex;
-    align-items: center;
-    text-align: left;
-    justify-content: space-evenly;
-    margin-top: 25px;
-    margin-bottom: 20px;
+/* DETAILS */
+.details {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
 }
 
-.hum{
-    width: 50px;
-    height: 50px;
-   
+.col {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
 }
-.wim{
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
+
+.col img {
+  width: 35px;
 }
-.humidity,.wind{
+
+.col p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.col span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* ERROR */
+.error {
+  display: none;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+  .details {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .temp {
+    font-size: 42px;
+  }
+
+  .city {
     font-size: 20px;
-}
-.humidity, .p2{
-    margin-left: -35px;
-}
-.wind{
-    margin-left: -10px;
-}
- .weather{
-    display: none; 
-} 
-.error{
-    display: none;
-    margin-top: 20px;
-    font-size: 70px;
-    font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  }
+
+  .weather-icon {
+    width: 90px;
+  }
 }
